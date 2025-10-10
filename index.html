@@ -4,29 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poems Project</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div id="poem">The poem will go here</div>
-    </main>
-    <footer>
-      This was coded by Rebecca Lange and is open sourced on Github and Netlify
-    </footer>
-
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem">The poem will go here</div>
+      </main>
+      <footer>
+        This was coded by Rebecca Lange and is open sourced on Github and
+        Netlify
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
