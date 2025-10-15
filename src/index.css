@@ -59,18 +59,22 @@ form {
   padding: 14px 24px;
 }
 
+.hidden {
+  display: none;
+}
+
 .flip {
   display: inline-block;
-  animation: flip 1s infinite linear;
+  animation: flip 0.8s infinite linear;
 }
 
 @keyframes flip {
   0%,
   100% {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
   }
   50% {
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
   }
 }
 
@@ -78,6 +82,7 @@ form {
   font-size: 24px;
   margin-right: 6px;
 }
+
 .poem {
   font-size: 16px;
   background: white;
